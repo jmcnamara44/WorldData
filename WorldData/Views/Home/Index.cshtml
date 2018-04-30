@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>cities</title>
+  </head>
+
+  <body>
+    <!-- <div class="topnav">  this will be part of our search and filtering functionality
+      <div class="form-group">
+        <select>
+          <option value="name"> City name </option>
+          <option value="country"> Country code </option>
+          <option value="population"> Population size </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select>
+          <option value="
+          less-than"> < </option>
+          <option value="greater-than"> > </option>
+          <option value="equal"> = </option>
+        </select>
+      </div>
+      <input type="text" placeholder="search condition..">
+    </div> -->
+
+    <table style="width:100%">
+      <tr>
+        <th>City ID</th>
+        <th>Name</th>
+        <th>Country Code</th>
+        <th>Population</th>
+      </tr>
+      @foreach(var detail in Model)
+      {
+        <tr>
+          <td>@detail.GetCityId()</td>
+          <td>@detail.GetCityName()</td>
+          <td>@detail.GetCityCountryCode()</td>
+          <td>@detail.GetCityPopulation()</td>
+        </tr>
+      }
+    </table>
+
+  </body>
+</html>
