@@ -1,6 +1,6 @@
-# _Tomagotchi_
+# _World Data_
 
-#### _This webpage will use C# to make a tomagotchi. 04/17/18_
+#### _This webpage will use C# to make a list of cities of the world. 04/30/18_
 
 #### By _**Jimmy McNamara and Kristi Hwang**_
 
